@@ -112,3 +112,15 @@ select * from characters_v4 order by Episodes_appeared DESC limit 20;
 |                48 |
 +-------------------+
 1 row in set (0.001 sec)
+
+# Quais casas nobres de que regiões começam com a letra U?
+select House_name, Region from houses_v1 where House_name like 'u%';
++---------------------------+---------------+
+| House_name                | Region        |
++---------------------------+---------------+
+| Uffering                  | Reach         |
+| Uller of the Hellholt     | Dorne         |
+| Umber of the Last Hearth  | North         |
+| Upcliff of the Witch Isle | Vale of Arryn |
++---------------------------+---------------+
+4 rows in set (0.002 sec)
